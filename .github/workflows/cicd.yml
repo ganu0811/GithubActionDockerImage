@@ -60,7 +60,7 @@ jobs:
                 context: .
                 file: ./Dockerfile
                 push: true
-                tags: ${{ secrets.DOCKER_USERNAME }}flasktest-app:latest  # Updated the line, slash removed
+                tags: ${{ secrets.DOCKER_USERNAME }}flasktest-app:latest  # slash removed
 
         - name: Image digest
           run: echo ${{ steps.build-and-publish.outputs.digest }}
